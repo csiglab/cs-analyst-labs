@@ -43,6 +43,26 @@ jar cmf MANIFEST.MF myagent.jar MyAgent.class MyLogger.class
 java -javaagent:myagent.jar -jar YourApplication.jar
 ```
 
+## Debug
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug Java Agent",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 42693
+        }
+    ]
+}
+```
+
 TODO:
 - Separar el agente del código.
 - Enviar la info a un servidor python en formato json - guardar en sqlite.
