@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "message": "Test message",
+    "exception": "nothing",
+    "timestamp": 1743442928,
+    "stackTrace" : "a/n"
+
+}
